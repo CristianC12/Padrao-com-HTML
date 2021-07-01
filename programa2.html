@@ -1,4 +1,4 @@
-<canvas width="900" height="600"></canvas>
+<canvas width="1300" height="600"></canvas>
 
 <script>    
 
@@ -8,23 +8,29 @@ function desenhaQuadrado(x, y, cor){
     var pincel = tela.getContext("2d")
 
         pincel.fillStyle = cor
-        pincel.fillRect(x, y ,100, 100)
+        pincel.fillRect(x, y ,50, 50)
         pincel.fillStroke = cor
-        pincel.strokeRect(x, y ,100, 100)
+        pincel.strokeRect(x, y ,50, 50)
+}
+var x = 300
+var y = 20
+while(x<1000){
+    
+    desenhaQuadrado(x,y,"red")
+    desenhaQuadrado(x,y+50,"orange")
+    desenhaQuadrado(x,y+100,"yellow")
+    desenhaQuadrado(x,y+150,"green")
+    desenhaQuadrado(x,y+200,"lightblue")
+    desenhaQuadrado(x,y+250,"blue")
+    desenhaQuadrado(x,y+300,"purple")
+    x = x+50
+    y = y+5
+
+    
 }
 
-desenhaQuadrado(100,0,"green")
-desenhaQuadrado(200,0,"green")
-desenhaQuadrado(300,0,"green")
-desenhaQuadrado(400,0,"green")
-desenhaQuadrado(500,0,"green")
-desenhaQuadrado(600,0,"green")
-desenhaQuadrado(700,0,"green")
-desenhaQuadrado(400,100,"green")
-desenhaQuadrado(400,200,"green")
-desenhaQuadrado(400,300,"green")
-desenhaQuadrado(400,400,"green")
-desenhaQuadrado(400,500,"green")
+
+
 
 
 
