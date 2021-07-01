@@ -2,16 +2,18 @@
 
 <script>    
 
+
+function desenhaQuadrado(){
     var tela = document.querySelector("canvas");
-    var pincel - tela.getContext("2d")
+    var pincel = tela.getContext("2d")
 
+        pincel.fillStyle = "green"
+        pincel.fillRect(0, 0 ,100, 100)
+        pincel.fillStroke = "black"
+        pincel.strokeRect(0, 0 ,100, 100)
+}
 
-
-
-
-
-
-
+desenhaQuadrado()
 
 
 </script>
