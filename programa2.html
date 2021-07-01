@@ -3,17 +3,31 @@
 <script>    
 
 
-function desenhaQuadrado(){
+function desenhaQuadrado(x, y, cor){
     var tela = document.querySelector("canvas");
     var pincel = tela.getContext("2d")
 
-        pincel.fillStyle = "green"
-        pincel.fillRect(0, 0 ,100, 100)
-        pincel.fillStroke = "black"
-        pincel.strokeRect(0, 0 ,100, 100)
+        pincel.fillStyle = cor
+        pincel.fillRect(x, y ,100, 100)
+        pincel.fillStroke = cor
+        pincel.strokeRect(x, y ,100, 100)
 }
 
-desenhaQuadrado()
+desenhaQuadrado(100,0,"green")
+desenhaQuadrado(200,0,"green")
+desenhaQuadrado(300,0,"green")
+desenhaQuadrado(400,0,"green")
+desenhaQuadrado(500,0,"green")
+desenhaQuadrado(600,0,"green")
+desenhaQuadrado(700,0,"green")
+desenhaQuadrado(400,100,"green")
+desenhaQuadrado(400,200,"green")
+desenhaQuadrado(400,300,"green")
+desenhaQuadrado(400,400,"green")
+desenhaQuadrado(400,500,"green")
+
+
+
 
 
 </script>
